@@ -1,24 +1,114 @@
 let container = document.querySelector('#app');
 
 let events = [
-    { id: 1, date: 'October 12, 2020', name: 'Awesome MeetUp', type: 'MeetUp', cover: 'images/1.jpg' },
-    { id: 2, date: 'October 14, 2020', name: 'Awesome Leap', type: 'Leap', cover: 'images/2.jpg' },
-    { id: 3, date: 'October 16, 2020', name: 'Awesome Recruiting Mission', type: 'Recruiting Mission', cover: 'images/3.jpg' },
-    { id: 4, date: 'October 18, 2020', name: 'Awesome VanHackathon', type: 'VanHackathon', cover: 'images/4.jpg' },
-    { id: 5, date: 'October 20, 2020', name: 'Awesome Premium-only Webinar', type: 'Premium-only Webinar', cover: 'images/5.jpg' },
-    { id: 6, date: 'October 22, 2020', name: 'Awesome Open Webinar', type: 'Open Webinar', cover: 'images/6.jpg' },
-    { id: 7, date: 'October 24, 2020', name: 'Fantastic MeetUp', type: 'MeetUp', cover: 'images/7.jpg' },
-    { id: 8, date: 'October 26, 2020', name: 'Fantastic Leap', type: 'Leap', cover: 'images/8.jpg' },
-    { id: 9, date: 'October 28, 2020', name: 'Fantastic Recruiting Mission', type: 'Recruiting Mission', cover: 'images/9.jpg' },
-    { id: 10, date: 'October 30, 2020', name: 'Fantastic VanHackathon', type: 'VanHackathon', cover: 'images/10.jpg' },
-    { id: 11, date: 'November 02, 2020', name: 'Fantastic Premium-only Webinar', type: 'Premium-only Webinar', cover: 'images/11.jpg' },
-    { id: 12, date: 'November 04, 2020', name: 'Fantastic Open Webinar', type: 'Open Webinar', cover: 'images/12.jpg' },
-    { id: 13, date: 'November 06, 2020', name: 'Special MeetUp', type: 'MeetUp', cover: 'images/13.jpg' },
-    { id: 14, date: 'November 08, 2020', name: 'Special Leap', type: 'Leap', cover: 'images/14.jpg' },
-    { id: 15, date: 'November 10, 2020', name: 'Special Recruiting Mission', type: 'Recruiting Mission', cover: 'images/15.jpg' },
-    { id: 16, date: 'November 12, 2020', name: 'Special VanHackathon', type: 'VanHackathon', cover: 'images/16.jpg' },
-    { id: 17, date: 'November 14, 2020', name: 'Special Premium-only Webinar', type: 'Premium-only Webinar', cover: 'images/17.jpg' },
-    { id: 18, date: 'November 16, 2020', name: 'Special Open Webinar', type: 'Open Webinar', cover: 'images/18.jpg' },
+    {
+        id: 1,
+        date: 'October 12, 2020',
+        name: 'Awesome MeetUp Event',
+        type: 'MeetUp',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/1.jpg' },
+    {
+        id: 2,
+        date: 'October 14, 2020',
+        name: 'Awesome Leap Event',
+        type: 'Leap',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/2.jpg' },
+    {
+        id: 3,
+        date: 'October 16, 2020',
+        name: 'Awesome Recruiting Mission Event',
+        type: 'Recruiting Mission',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/3.jpg' },
+    {
+        id: 4,
+        date: 'October 18, 2020',
+        name: 'Awesome VanHackathon Event',
+        type: 'VanHackathon',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/4.jpg' },
+    {
+        id: 5,
+        date: 'October 20, 2020',
+        name: 'Awesome Premium-only Webinar Event',
+        type: 'Premium-only Webinar',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/5.jpg' },
+    {
+        id: 6,
+        date: 'October 22, 2020',
+        name: 'Awesome Open Webinar Event',
+        type: 'Open Webinar',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/6.jpg' },
+    {
+        id: 7,
+        date: 'October 24, 2020',
+        name: 'Fantastic MeetUp Event',
+        type: 'MeetUp',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/7.jpg' },
+    {
+        id: 8,
+        date: 'October 26, 2020',
+        name: 'Fantastic Leap Event',
+        type: 'Leap',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/8.jpg' },
+    {
+        id: 9,
+        date: 'October 28, 2020',
+        name: 'Fantastic Recruiting Mission Event',
+        type: 'Recruiting Mission',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/9.jpg' },
+    {
+        id: 10,
+        date: 'October 30, 2020',
+        name: 'Fantastic VanHackathon Event',
+        type: 'VanHackathon',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/10.jpg' },
+    {
+        id: 11,
+        date: 'November 02, 2020',
+        name: 'Fantastic Premium-only Webinar Event',
+        type: 'Premium-only Webinar',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/11.jpg' },
+    {
+        id: 12,
+        date: 'November 04, 2020',
+        name: 'Fantastic Open Webinar Event',
+        type: 'Open Webinar',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/12.jpg' },
+    {
+        id: 13,
+        date: 'November 06, 2020',
+        name: 'Special MeetUp Event',
+        type: 'MeetUp',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/13.jpg' },
+    {
+        id: 14,
+        date: 'November 08, 2020',
+        name: 'Special Leap Event',
+        type: 'Leap',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/14.jpg' },
+    {
+        id: 15,
+        date: 'November 10, 2020',
+        name: 'Special Recruiting Mission Event',
+        type: 'Recruiting Mission',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/15.jpg' },
+    {
+        id: 16,
+        date: 'November 12, 2020',
+        name: 'Special VanHackathon Event',
+        type: 'VanHackathon',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/16.jpg' },
+    {
+        id: 17,
+        date: 'November 14, 2020',
+        name: 'Special Premium-only Webinar Event',
+        type: 'Premium-only Webinar',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/17.jpg' },
+    {
+        id: 18,
+        date: 'November 16, 2020',
+        name: 'Special Open Webinar Event',
+        type: 'Open Webinar',
+        cover: 'https://raw.githubusercontent.com/victorwpbastos/vanhack-code-test/main/images/18.jpg' },
 ];
 
 function openEventDetails(eventId) {
@@ -49,6 +139,10 @@ function applyEvent(eventId) {
             icon: 'error',
             showCancelButton: true,
             confirmButtonText: 'I want to know more about Premium Membership'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.open('https://vanhack.com/premium');
+            }
         });
 
         return;
