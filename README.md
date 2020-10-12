@@ -1,2 +1,2 @@
-# vanhack-test
+# vanhack-code-test
 VanHack Code Test
